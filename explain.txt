@@ -1,0 +1,22 @@
+index {
+    The PHP code begins by including a control file using the include statement. This file likely contains the database
+connection information and other functions that are used throughout the code.
+
+The code then checks if the submit button has been pressed. If it has, the code retrieves the usulan or laporan
+data from the POST request and inserts it into the usulan or laporan table in the database, respectively.
+If the data is successfully inserted, the code displays a JavaScript alert to inform the user that the data has been
+added and is awaiting confirmation from an admin.
+
+After the data is inserted, the code selects the most recent four entries from the valid_laporan and valid_usulan
+tables using SQL queries and stores the results in $resultlaporan and $resultusulan, respectively. These results
+are likely used to display the most recent data on a webpage.
+}
+
+
+index body section {
+    The laporan section displays data from a database table called resultlaporan. It uses PHP code to retrieve the data and display it in a grid of boxes. Each box displays the date and the content of a report. The usulan section displays data from a database table called resultusulan in a similar way.
+
+The masukan section includes a form that allows users to submit feedback. The form includes two text areas for users to enter their feedback, one for usulan and one for laporan. When the user submits the form, the data is sent to a PHP script for processing.
+
+The HTML code also includes a JavaScript script that loads the Crisp chat widget. The widget allows users to chat with the organization's representatives.
+}
