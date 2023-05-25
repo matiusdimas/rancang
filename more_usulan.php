@@ -9,7 +9,7 @@ $halamanaktif = (isset($_GET['hal'])) ? $_GET['hal'] : 1;
 $awaldata = ($datahal*$halamanaktif) - $datahal;
 
 $sqlvalusulan = "SELECT * FROM valid_usulan 
-INNER JOIN users ON (valid_usulan.id_users=users.id) order by tanggal asc limit $awaldata ,$datahal";
+INNER JOIN users ON (valid_usulan.id_users=users.id) order by tanggal desc limit $awaldata ,$datahal";
 $resultvalusulan= $conn->query($sqlvalusulan);
 
 ?>
